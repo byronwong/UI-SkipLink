@@ -43,38 +43,44 @@ Programable focus using .focus method
 using tab index of -1 and focus heading when menu option is clicked, this allows the users focus to keep in sync with the where the page is scrolled.
 
 ```html
-  <nav id="menu" class="">
-    <a href="what-is-vegemite" data-page="what-is-vegemite" class="is-active">What is Vegemite?</a>
-    <a href="recipes" data-page="recipes" class="">Recipes</a>
-    <a href="ingredients" data-page="ingredients" class="">Ingredients</a>
-  </nav>
+    <nav class="main-nav">
+      <ul>
+        <li><a class="nav-link" href="#chp1">Chapter 1</a></li>
+        <li><a class="nav-link" href="#chp2">Chapter 2</a></li>
+        <li><a class="nav-link" href="#chp3">Chapter 3</a></li>
+        <li><a class="nav-link" href="#chp4">Chapter 4</a></li>
+      </ul>
+    </nav>
 ```
 
 ### Skip links
+When the skip link is focused it comes into view.
+
+- using a `href` attribute makes it easy to implement, however you still can use this with a tabindex of 0 and key event handling. 
+- Notice the `skip link` comes before the `nav` so that in the tab order it is first.
 
 ```html 
-  <a href="#maincontent" class="skip-link">Skip to main content</a>
-  <!-- Note: before nav -->
-  <nav></nav>  
-
-  <main tabindex="-1"></main> 
+    <a class="skip-link"  href="#maincontent" tabindex="0">Skip navigation</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a class="nav-link" href="#chp1">Chapter 1</a></li>
+        <li><a class="nav-link" href="#chp2">Chapter 2</a></li>
+        <li><a class="nav-link" href="#chp3">Chapter 3</a></li>
+        <li><a class="nav-link" href="#chp4">Chapter 4</a></li>
+      </ul>
+    </nav>
 ```
-Remember that tabindex adds things to the tab order.
 
 ```css
-  .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background-color: red;
-    color: white;
-    padding: 8px;
-    z-index: 100;
-  }
+.skip-link {
+  position: absolute;
+  top: 4px;
+  left: -500px;
+}
 
-  .skip-link:focus {
-    top: 0;
-  }
+.skip-link:focus {
+  left: 4px;
+}
 ```
 
 
