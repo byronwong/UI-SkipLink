@@ -8,21 +8,52 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 
-  <title>2018 Starter Kit</title>
+  <title>Skip Links and Focus example</title>
 
-  <!-- React Scripts -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-
-  <!-- Don't use this in production: -->
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 </head>
 <body>
 
-  <h1>Sandbox</h1>
-  <div id="root"></div>
+  <header>
+    <h1 id="page-top" tabindex="-1">Skip Links and Focus example</h1>
+  </header>
 
-  <script type="text/babel" src="js/main.js"></script>
+  <main>
+    <a class="skip-link"  href="#maincontent" tabindex="0">Skip navigation</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a class="nav-link" href="#chp1">Chapter 1</a></li>
+        <li><a class="nav-link" href="#chp2">Chapter 2</a></li>
+        <li><a class="nav-link" href="#chp3">Chapter 3</a></li>
+        <li><a class="nav-link" href="#chp4">Chapter 4</a></li>
+      </ul>
+    </nav>
+
+    <article id="maincontent" class="main-content" tabindex="-1">
+      <h1 id="chp1" tabindex="-1">Chapter 1</h1>
+      <a href="#page-top">back to top</a>
+      <p>Lorem ipsum dolor amet listicle slow-carb viral vape blog, tacos mlkshk celiac.  Typewriter chambray bicycle rights vegan neutra quinoa iPhone subway tile single-origin coffee bitters chicharrones cardigan.  Next level messenger bag swag, godard plaid coloring book retro intelligentsia +1 hoodie tousled tote bag subway tile shaman.  VHS 3 wolf moon subway tile food truck knausgaard.  Cloud bread pok pok locavore etsy gochujang, enamel pin brunch lyft fixie la croix coloring book woke schlitz organic.</p>
+      <p>Drinking vinegar etsy pop-up small batch health goth pickled tbh yuccie.  Pabst bicycle rights deep v ennui, shabby chic vice man braid hoodie.  Pickled trust fund kitsch sriracha normcore mustache chambray raclette kale chips tofu viral.  Dreamcatcher listicle activated charcoal blog shabby chic mixtape tilde vape chartreuse.</p><p>Bitters glossier microdosing cronut, selvage mlkshk small batch fixie dreamcatcher tbh activated charcoal kombucha gochujang bicycle rights.  Meh mixtape cred, glossier tattooed heirloom affogato copper mug tofu pabst offal shoreditch.  90's seitan DIY hot chicken vegan.  Taxidermy farm-to-table irony literally.  Air plant pabst street art, williamsburg locavore paleo iPhone messenger bag taiyaki twee synth palo santo organic.</p>
+      <p>Wayfarers leggings stumptown blog semiotics unicorn.  Hexagon poke retro +1 intelligentsia synth.  Kickstarter irony art party whatever.  Paleo mustache hashtag hot chicken umami small batch helvetica iceland bushwick deep v hoodie post-ironic fixie.  Drinking vinegar taxidermy keytar hoodie dreamcatcher direct trade gochujang hashtag portland heirloom four dollar toast hammock helvetica truffaut.</p><p>Disrupt iceland pok pok, ennui shabby chic typewriter ethical adaptogen offal bushwick tote bag.  Lomo yr poke, fashion axe health goth offal meggings YOLO celiac blue bottle.  Pabst post-ironic portland cronut.  Brunch pug tousled art party mlkshk meh.</p>
+      <h1 id="chp2" tabindex="-1">Chapter 2</h1>
+      <a href="#page-top">back to top</a>
+      <p>Lorem ipsum dolor amet listicle slow-carb viral vape blog, tacos mlkshk celiac.  Typewriter chambray bicycle rights vegan neutra quinoa iPhone subway tile single-origin coffee bitters chicharrones cardigan.  Next level messenger bag swag, godard plaid coloring book retro intelligentsia +1 hoodie tousled tote bag subway tile shaman.  VHS 3 wolf moon subway tile food truck knausgaard.  Cloud bread pok pok locavore etsy gochujang, enamel pin brunch lyft fixie la croix coloring book woke schlitz organic.</p>
+      <p>Drinking vinegar etsy pop-up small batch health goth pickled tbh yuccie.  Pabst bicycle rights deep v ennui, shabby chic vice man braid hoodie.  Pickled trust fund kitsch sriracha normcore mustache chambray raclette kale chips tofu viral.  Dreamcatcher listicle activated charcoal blog shabby chic mixtape tilde vape chartreuse.</p><p>Bitters glossier microdosing cronut, selvage mlkshk small batch fixie dreamcatcher tbh activated charcoal kombucha gochujang bicycle rights.  Meh mixtape cred, glossier tattooed heirloom affogato copper mug tofu pabst offal shoreditch.  90's seitan DIY hot chicken vegan.  Taxidermy farm-to-table irony literally.  Air plant pabst street art, williamsburg locavore paleo iPhone messenger bag taiyaki twee synth palo santo organic.</p>
+      <p>Wayfarers leggings stumptown blog semiotics unicorn.  Hexagon poke retro +1 intelligentsia synth.  Kickstarter irony art party whatever.  Paleo mustache hashtag hot chicken umami small batch helvetica iceland bushwick deep v hoodie post-ironic fixie.  Drinking vinegar taxidermy keytar hoodie dreamcatcher direct trade gochujang hashtag portland heirloom four dollar toast hammock helvetica truffaut.</p><p>Disrupt iceland pok pok, ennui shabby chic typewriter ethical adaptogen offal bushwick tote bag.  Lomo yr poke, fashion axe health goth offal meggings YOLO celiac blue bottle.  Pabst post-ironic portland cronut.  Brunch pug tousled art party mlkshk meh.</p>
+      <h1 id="chp3" tabindex="-1">Chapter 3</h1>
+      <a href="#page-top">back to top</a>
+      <p>Lorem ipsum dolor amet listicle slow-carb viral vape blog, tacos mlkshk celiac.  Typewriter chambray bicycle rights vegan neutra quinoa iPhone subway tile single-origin coffee bitters chicharrones cardigan.  Next level messenger bag swag, godard plaid coloring book retro intelligentsia +1 hoodie tousled tote bag subway tile shaman.  VHS 3 wolf moon subway tile food truck knausgaard.  Cloud bread pok pok locavore etsy gochujang, enamel pin brunch lyft fixie la croix coloring book woke schlitz organic.</p>
+      <p>Drinking vinegar etsy pop-up small batch health goth pickled tbh yuccie.  Pabst bicycle rights deep v ennui, shabby chic vice man braid hoodie.  Pickled trust fund kitsch sriracha normcore mustache chambray raclette kale chips tofu viral.  Dreamcatcher listicle activated charcoal blog shabby chic mixtape tilde vape chartreuse.</p><p>Bitters glossier microdosing cronut, selvage mlkshk small batch fixie dreamcatcher tbh activated charcoal kombucha gochujang bicycle rights.  Meh mixtape cred, glossier tattooed heirloom affogato copper mug tofu pabst offal shoreditch.  90's seitan DIY hot chicken vegan.  Taxidermy farm-to-table irony literally.  Air plant pabst street art, williamsburg locavore paleo iPhone messenger bag taiyaki twee synth palo santo organic.</p>
+      <p>Wayfarers leggings stumptown blog semiotics unicorn.  Hexagon poke retro +1 intelligentsia synth.  Kickstarter irony art party whatever.  Paleo mustache hashtag hot chicken umami small batch helvetica iceland bushwick deep v hoodie post-ironic fixie.  Drinking vinegar taxidermy keytar hoodie dreamcatcher direct trade gochujang hashtag portland heirloom four dollar toast hammock helvetica truffaut.</p><p>Disrupt iceland pok pok, ennui shabby chic typewriter ethical adaptogen offal bushwick tote bag.  Lomo yr poke, fashion axe health goth offal meggings YOLO celiac blue bottle.  Pabst post-ironic portland cronut.  Brunch pug tousled art party mlkshk meh.</p>
+      <h1 id="chp4" tabindex="-1">Chapter 4</h1>
+      <a href="#page-top">back to top</a>
+      <p>Lorem ipsum dolor amet listicle slow-carb viral vape blog, tacos mlkshk celiac.  Typewriter chambray bicycle rights vegan neutra quinoa iPhone subway tile single-origin coffee bitters chicharrones cardigan.  Next level messenger bag swag, godard plaid coloring book retro intelligentsia +1 hoodie tousled tote bag subway tile shaman.  VHS 3 wolf moon subway tile food truck knausgaard.  Cloud bread pok pok locavore etsy gochujang, enamel pin brunch lyft fixie la croix coloring book woke schlitz organic.</p>
+      <p>Drinking vinegar etsy pop-up small batch health goth pickled tbh yuccie.  Pabst bicycle rights deep v ennui, shabby chic vice man braid hoodie.  Pickled trust fund kitsch sriracha normcore mustache chambray raclette kale chips tofu viral.  Dreamcatcher listicle activated charcoal blog shabby chic mixtape tilde vape chartreuse.</p><p>Bitters glossier microdosing cronut, selvage mlkshk small batch fixie dreamcatcher tbh activated charcoal kombucha gochujang bicycle rights.  Meh mixtape cred, glossier tattooed heirloom affogato copper mug tofu pabst offal shoreditch.  90's seitan DIY hot chicken vegan.  Taxidermy farm-to-table irony literally.  Air plant pabst street art, williamsburg locavore paleo iPhone messenger bag taiyaki twee synth palo santo organic.</p>
+      <p>Wayfarers leggings stumptown blog semiotics unicorn.  Hexagon poke retro +1 intelligentsia synth.  Kickstarter irony art party whatever.  Paleo mustache hashtag hot chicken umami small batch helvetica iceland bushwick deep v hoodie post-ironic fixie.  Drinking vinegar taxidermy keytar hoodie dreamcatcher direct trade gochujang hashtag portland heirloom four dollar toast hammock helvetica truffaut.</p><p>Disrupt iceland pok pok, ennui shabby chic typewriter ethical adaptogen offal bushwick tote bag.  Lomo yr poke, fashion axe health goth offal meggings YOLO celiac blue bottle.  Pabst post-ironic portland cronut.  Brunch pug tousled art party mlkshk meh.</p>
+    </article>
+
+  </main>
+
+  <script src="js/main.js"></script>
 
 </body>
 </html>

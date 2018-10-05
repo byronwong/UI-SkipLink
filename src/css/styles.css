@@ -2,3 +2,37 @@ body {
   font-family: sans-serif;
   font-size: 16px;
 }
+
+nav,
+article {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-nav ul li {
+  padding: 8px 16px 8px 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: 4px;
+  left: -500px;
+}
+
+.skip-link:focus {
+  left: 4px;
+}
+
+/* Important - removes focus ring tabindex -1 elements */
+[tabindex="-1"] {
+  outline: none;
+}
+
