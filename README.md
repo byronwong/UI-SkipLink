@@ -15,6 +15,11 @@ To package this (deleting node modules) you can use `npm run package`
 - `npx babel --version` - to check babel is correctly installed
 - `npm babel-node` - to run babel on our build scripts including app.js
 
-## Basic React implementation 
-I have add basic react, see html and [these docs](https://reactjs.org/docs/add-react-to-a-website.html)
+
+# Project 
+
+- Added skip link to skip over navigation 
+- added refocus to update browser focus then navigating to a fragment
+
+
 
