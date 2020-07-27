@@ -1,5 +1,8 @@
 This project is using: 2018-starter
 
+Things TODO:
+Remove unnecessary items
+
 ## Global requirements
 To package this (deleting node modules) you can use `npm run package`
 - `del-cli` - `npm install --global del-cli`
